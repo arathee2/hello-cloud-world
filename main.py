@@ -6,9 +6,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    msg = """This is a simple flask app that continuously deploys using 
-    Google Cloud Platform. Append '/time' after the base URL to the current 
-    URL to see today's date and time.
+    msg = """This is a simple flask app that is continuously being deployed using 
+    Google Cloud Platform (GCP). Append '/time' after the base URL (after .com) to 
+    see today's date and time.
     """
     return msg
 
