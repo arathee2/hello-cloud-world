@@ -8,13 +8,13 @@ app = Flask(__name__)
 def hello():
     msg = """This is a simple flask app that is continuously being deployed using 
     Google Cloud Platform (GCP). Append '/time' after the base URL (after .com) to 
-    see today's date and time.
+    see the date and time when this page was last updated.
     """
     return msg
 
 @app.route('/time')
 def time():
-    msg = f"Current date and time is: {datetime.datetime.now()}"
+    msg = f"Website last updated on: {datetime.datetime.now()}"
     return msg
 
 if __name__ == '__main__':
